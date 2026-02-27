@@ -12,6 +12,7 @@ export default function Projects({ darkMode }) {
 
   return (
     <div
+      id="projects"
       className={darkMode ? "project" : "project-dark"}
       style={{ flexDirection: isWindow > 1200 ? "row" : "column" }}>
       <div

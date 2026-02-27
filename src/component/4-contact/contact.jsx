@@ -12,7 +12,7 @@ export default function Contact({ darkMode }) {
   const [state, handleSubmit] = useForm("mbdawnlj");
 
   return (
-    <div className={darkMode ? "contact" : "contact-dark"}>
+    <div className={darkMode ? "contact" : "contact-dark"} id="contact">
       <div
         className={darkMode ? "contact-left" : "contact-left-dark"}
         style={{

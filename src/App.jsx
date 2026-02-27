@@ -11,6 +11,9 @@ export default function App() {
   const [scroll, setScroll] = useState(0);
   useEffect(() => {
     window.addEventListener("scroll", () => setScroll(window.scrollY));
+
+    return () =>
+      window.removeEventListener("scroll", () => setScroll(window.scrollY));
   }, []);
 
   return (
@@ -19,17 +22,19 @@ export default function App() {
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <Home darkMode={darkMode} />
         <div className={darkMode ? "line" : "line-dark"} />
-        <Projects darkMode={darkMode} />
+        <Projects path="/projects" darkMode={darkMode} />
         <div className={darkMode ? "line" : "line-dark"} />
         <Contact darkMode={darkMode} />
         <div className={darkMode ? "line" : "line-dark"} />
         <Footer />
       </div>
-      {scroll >= 300 ? (
-        <button className="btn-arrow">
+      {scroll >= 300 && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="btn-arrow">
           <IoIosArrowUp />
         </button>
-      ) : null}
+      )}
     </div>
   );
 }

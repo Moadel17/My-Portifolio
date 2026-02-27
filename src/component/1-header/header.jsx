@@ -25,16 +25,15 @@ export default function Header({ darkMode, setDarkMode }) {
           display: isWindow > 730 ? "flex" : "none",
         }}>
         <p>
-          <a href="#">Home</a>
+          <a href="#" onClick={() => window.location.reload()}>
+            Home
+          </a>
         </p>
         <p>
-          <a href="#">Projects</a>
+          <a href="#projects">Projects</a>
         </p>
         <p>
-          <a href="#">Contact Me</a>
-        </p>
-        <p>
-          <a href="#">About</a>
+          <a href="#contact">Contact Me</a>
         </p>
       </div>
       {fixedOpen && (
@@ -49,16 +48,15 @@ export default function Header({ darkMode, setDarkMode }) {
               />
             </li>
             <li>
-              <a href="#">Home</a>
+              <a href="#" onClick={() => window.location.reload()}>
+                Home
+              </a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#">Contact Me</a>
-            </li>
-            <li>
-              <a href="#">About</a>
+              <a href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
