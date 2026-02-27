@@ -47,20 +47,14 @@ export default function Header({ darkMode, setDarkMode }) {
                 onClick={() => setFixedOpen(false)}
               />
             </li>
-            <li>
-              <a href="#" onClick={() => window.location.reload()}>
-                Home
-              </a>
+            <li onClick={() => window.location.reload()}>
+              <a href="#">Home</a>
             </li>
-            <li>
-              <a href="#projects" onClick={() => setFixedOpen(false)}>
-                Projects
-              </a>
+            <li onClick={() => setFixedOpen(false)}>
+              <a href="#projects">Projects</a>
             </li>
-            <li>
-              <a href="#contact" onClick={() => setFixedOpen(false)}>
-                Contact Me
-              </a>
+            <li onClick={() => setFixedOpen(false)}>
+              <a href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
