@@ -53,10 +53,14 @@ export default function Header({ darkMode, setDarkMode }) {
               </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={() => setFixedOpen(false)}>
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact Me</a>
+              <a href="#contact" onClick={() => setFixedOpen(false)}>
+                Contact Me
+              </a>
             </li>
           </ul>
         </div>

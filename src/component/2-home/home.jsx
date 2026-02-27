@@ -100,8 +100,8 @@ export default function Home({ darkMode }) {
         style={{ display: isWindow > 1050 ? "block" : "none" }}>
         <Lottie
           style={{
-            width: isWindow > 1400 ? "500px" : "350px",
-            width: isWindow > 1050 ? "350px" : "250px",
+            width:
+              isWindow > 1400 ? "500px" : isWindow > 1050 ? "350px" : "250px",
           }}
           className="home-right-lapAnimation"
           animationData={lapAnimation}
