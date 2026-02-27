@@ -1,0 +1,85 @@
+.home {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* Home Left */
+.home .home-left {
+  padding: 0 100px;
+  flex-grow: 1;
+}
+
+.home .home-left .home-left-profile img {
+  width: 100px;
+  height: 100px;
+}
+
+.home .home-left .home-left-icon {
+  font-size: 20px;
+  transform: translate(5px, -5px);
+}
+.home .home-left .home-h1-dark,
+.home .home-left .home-h {
+  font-size: 40px;
+  margin: 20px 4px;
+  color: white;
+}
+.home .home-left .home-h {
+  color: black;
+}
+.home .home-left .home-p-dark,
+.home .home-left .home-p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #9c9ca2;
+  margin: 0 5px;
+  width: 100%;
+}
+.home .home-left .home-p {
+  color: gray;
+}
+.home-left-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.home-left-icons .home-left-icon-dark,
+.home-left-icons .home-left-icon {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  margin: 30px 5px 0;
+  transition: 0.5s all ease;
+}
+.home-left-icons .home-left-icon {
+  color: black;
+}
+.home-left-icons .home-left-icon-dark:hover,
+.home-left-icons .home-left-icon:hover {
+  color: aqua;
+}
+
+/* Home Right */
+
+.home-right {
+  transform: translate(0, 50px);
+}
+.home-right .home-right-lapAnimation {
+  width: 500px;
+}
+
+@media (max-width: 1400px) {
+  .home-right .home-right-lapAnimation {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .home-right .home-right-lapAnimation {
+    width: 350px;
+  }
+}

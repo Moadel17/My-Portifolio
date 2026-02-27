@@ -1,0 +1,7 @@
+.footer , .footer-dark {
+  background: var(--secnodry);
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
