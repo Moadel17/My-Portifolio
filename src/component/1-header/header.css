@@ -143,6 +143,8 @@
   color: white;
   font-size: 20px;
   transition: 0.5s all ease;
+  display: block;
+  width: 100%;
 }
 .fixed-ul li a {
   color: black;

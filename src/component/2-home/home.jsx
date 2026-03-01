@@ -74,13 +74,6 @@ export default function Home({ darkMode }) {
             className={darkMode ? "home-left-icon" : "home-left-icon-dark"}>
             <FaFacebook style={{ fontSize: "25px" }} />
           </button>
-          {/* <button
-            onClick={() =>
-              window.open("https://web.whatsapp.com/", "_blank")
-            }
-            className={darkMode ? "home-left-icon" : "home-left-icon-dark"}>
-            <FaTelegramPlane style={{ fontSize: "25px" }} />
-          </button> */}
           <button
             onClick={() =>
               window.open("https://www.instagram.com/3de_17/", "_blank")

@@ -1,5 +1,5 @@
 import "./header.css";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { FaBars, FaRegMoon, FaSun } from "react-icons/fa";
 import { Window } from "../../context/windowWidth";
 import { IoClose } from "react-icons/io5";
@@ -7,6 +7,18 @@ import { IoClose } from "react-icons/io5";
 export default function Header({ darkMode, setDarkMode }) {
   const isWindow = useContext(Window);
   const [fixedOpen, setFixedOpen] = useState(false);
+  const closeList = useRef(null);
+
+  useEffect(() => {
+    function handleCloseList(e) {
+      if (closeList.current && !closeList.current.contains(e.target)) {
+        setFixedOpen(false);
+      }
+    }
+    document.addEventListener("pointerdown", handleCloseList);
+
+    return () => document.removeEventListener("pointerdown", handleCloseList);
+  }, []);
 
   return (
     <div className="header">
@@ -40,7 +52,9 @@ export default function Header({ darkMode, setDarkMode }) {
         <div
           className="fixed"
           style={{ display: isWindow > 730 ? "none" : "block" }}>
-          <ul className={darkMode ? "fixed-ul" : "fixed-ul-dark"}>
+          <ul
+            ref={closeList}
+            className={darkMode ? "fixed-ul" : "fixed-ul-dark"}>
             <li>
               <IoClose
                 className={darkMode ? "icon-close" : "icon-close-dark"}
