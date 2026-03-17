@@ -15,11 +15,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0 0px;
-  gap: 30px;
-  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
-  padding: 10px 30px;
-  border-radius: 40px;
+  margin: var(--spacing-sm) 0 0;
+  gap: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-xs) var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
 }
 .header-div {
   background-color: white;
@@ -51,17 +51,17 @@
 }
 .header .btn,
 .header .dark {
-  margin: 15px 0 0;
-  margin-right: 50px;
-  font-size: 18px;
+  margin: var(--spacing-sm) 0 0;
+  margin-right: var(--spacing-xl);
+  font-size: var(--font-size-lg);
   outline: none;
-  border-radius: 30px;
+  border-radius: var(--border-radius-lg);
   border: none;
-  padding: 8px 10px;
+  padding: var(--spacing-xs) var(--spacing-sm);
   cursor: pointer;
-  transform: translateX(20px);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  transition: 0.5s all ease;
+  transform: translateX(var(--spacing-lg));
+  box-shadow: var(--shadow-sm);
+  transition: 0.3s ease;
 }
 .header .btn {
   background-color: white;
@@ -81,23 +81,23 @@
   border: 1px solid #636262;
 }
 .fixed {
-  background-color: #000000e8;
-  opacity: 0.7;
+  background-color: var(--primary);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
-  position: absolute;
+  position: fixed;
   inset: 0;
-  z-index: 1000;
+  z-index: 9999;
 }
 .fixed-ul,
 .fixed-ul-dark {
   background-color: var(--secnodry);
-  width: 80%;
-  margin: 20px auto 0;
-  padding: 1rem 2rem;
+  width: min(90vw, 400px);
+  margin: var(--spacing-lg) auto 0;
+  padding: var(--spacing-md);
   list-style: none;
-  animation: fixed-open 0.5s 1;
+  animation: fixed-open 0.3s ease;
   position: relative;
-  border-radius: 30px;
+  border-radius: var(--border-radius-lg);
 }
 .fixed-ul {
   background-color: white;
@@ -141,8 +141,8 @@
 .fixed-ul-dark li a {
   text-decoration: none;
   color: white;
-  font-size: 20px;
-  transition: 0.5s all ease;
+  font-size: clamp(1.125rem, 4vw, var(--font-size-lg));
+  transition: 0.3s ease;
   display: block;
   width: 100%;
 }

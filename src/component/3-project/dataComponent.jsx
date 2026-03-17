@@ -21,6 +21,11 @@ export const buttons = [
     title: "React JS",
     category: "react js",
   },
+  {
+    key: 4,
+    title: "React TS",
+    category: "react ts",
+  },
 ];
 
 export const cards = [

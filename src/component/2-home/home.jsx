@@ -34,15 +34,6 @@ export default function Home({ darkMode }) {
             alt="i"
           />
           <VscVerifiedFilled style={{ color: darkMode ? "black" : "aqua" }} />
-          {/* <Lottie
-            style={{
-              width: "25px",
-              verticalAlign: "center",
-              marginRight: "10px",
-            }}
-            className="icon"
-            animationData={verify}
-          /> */}
         </div>
         <motion.h1
           initial={{ opacity: 0 }}
@@ -57,12 +48,10 @@ export default function Home({ darkMode }) {
         <p
           className={darkMode ? "home-p" : "home-p-dark"}
           style={{ fontSize: isWindow > 1085 ? "14px" : "12px" }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          omnis, delectus vel explicabo nihil voluptatum voluptate aliquid
-          fugiat est laudantium nemo officiis distinctio eum eaque, in ratione
-          voluptas, nostrum veritatis sapiente nesciunt non fuga? Fugit dolorem
-          deleniti, quas architecto quae optio est adipisci praesentium
-          reprehenderit, tempore distinctio enim officiis dignissimos.
+          My name is Mohamed Adel. I'm a front-end developer with 2 years of
+          experience. I build modern and responsive web applications. Below you
+          can find a selection of my projects. Feel free to contact me if you'd
+          like to work together.
         </p>
         <div
           className="home-left-icons"

@@ -7,7 +7,7 @@
 
 /* Home Left */
 .home .home-left {
-  padding: 0 100px;
+  padding: 0 clamp(var(--spacing-sm), 8vw, var(--spacing-xl));
   flex-grow: 1;
 }
 
@@ -43,7 +43,7 @@
 .home-left-icons {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: var(--spacing-lg);
 }
 .home-left-icons .home-left-icon-dark,
 .home-left-icons .home-left-icon {
@@ -52,8 +52,8 @@
   outline: none;
   cursor: pointer;
   color: white;
-  margin: 30px 5px 0;
-  transition: 0.5s all ease;
+  margin: var(--spacing-xl) var(--spacing-xs) 0;
+  transition: 0.3s ease;
 }
 .home-left-icons .home-left-icon {
   color: black;
@@ -74,12 +74,24 @@
 
 @media (max-width: 1400px) {
   .home-right .home-right-lapAnimation {
-    width: 350px;
+    width: clamp(300px, 50vw, 400px);
   }
 }
 
-@media (max-width: 1400px) {
-  .home-right .home-right-lapAnimation {
-    width: 350px;
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home .home-left {
+    padding: 0 var(--spacing-md);
+    order: 2;
+  }
+
+  .home-right {
+    order: 1;
+    transform: none;
+    margin-bottom: var(--spacing-xl);
   }
 }
