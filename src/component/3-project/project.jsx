@@ -4,6 +4,7 @@ import "./project.css";
 import { useContext, useState } from "react";
 import { Window } from "../../context/windowWidth";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Projects({ darkMode }) {
   const [cardArr, setCardArr] = useState(cards);
@@ -71,25 +72,12 @@ export default function Projects({ darkMode }) {
                 <h2>{card.title}</h2>
                 <p>{card.description}</p>
                 <div className="links-box">
-                  <a
-                    onClick={() =>
-                      window.open(
-                        "https://moadel17.github.io/Travel-Website/",
-                        "_blank",
-                      )
-                    }>
+                  <Link to={card.link}>
                     <FaLink style={{ fontSize: "18px" }} />
-                  </a>
-                  <a
-                  //   onClick={() =>
-                  //     window.open(
-                  //       "https://moadel17.github.io/Travel-Website/",
-                  //       "_blank",
-                  //     )
-                  //   }
-                  >
+                  </Link>
+                  <Link to={card.link}>
                     More <FaArrowRight />
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             );
