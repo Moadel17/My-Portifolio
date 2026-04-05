@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/My-Portifolio/", // ← أضف هذا السطر
+  base: "./", // ← أضف هذا السطر
   plugins: [react()],
 });

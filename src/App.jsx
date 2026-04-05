@@ -9,6 +9,7 @@ import Footer from "./component/5-footer/footer";
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [scroll, setScroll] = useState(0);
+
   useEffect(() => {
     window.addEventListener("scroll", () => setScroll(window.scrollY));
 
