@@ -51,10 +51,10 @@ export default function Projects({ darkMode }) {
           <h2>{card.title}</h2>
           <p>{card.description}</p>
           <div className="links-box">
-            <Link to={card.link}>
+            <Link>
               <FaLink style={{ fontSize: "18px" }} />
             </Link>
-            <Link to={card.link}>
+            <Link>
               More <FaArrowRight />
             </Link>
           </div>
