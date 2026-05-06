@@ -45,7 +45,7 @@ export const cards = [
     img: coffeeBrandWeb,
     title: "Coffee Brand",
     description: "A brand coffee website that buy coffee, tea, juice and etc. ",
-    link: "https://moadel17.github.io/Coffee-Brand/",
+    link: "https://coffee-brand-p8po.vercel.app/",
     more: "",
     category: "react js",
   },
