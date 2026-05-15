@@ -44,17 +44,17 @@ export default function Projects({ darkMode }) {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0 }}
-          onClick={() => window.open(`${card.link}`, "_blank")}
           className={darkMode ? "cards-box" : "cards-box-dark"}>
           <img src={card.img} alt="" />
 
           <h2>{card.title}</h2>
           <p>{card.description}</p>
           <div className="links-box">
-            <Link>
+            <Link to={card.link , "_blank"}>
               <FaLink style={{ fontSize: "18px" }} />
             </Link>
-            <Link> {/* don't add to here */}
+            <Link to={card.link , "_blank"}>
+              {/* don't add to here */}
               More <FaArrowRight />
             </Link>
           </div>
