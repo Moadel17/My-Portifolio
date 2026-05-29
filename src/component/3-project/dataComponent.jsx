@@ -34,7 +34,7 @@ export const cards = [
     description:
       "This is a travel wab app to book a trip into deffrent countries",
     link: "https://travel-website-tau-beige.vercel.app/",
-    more: "",
+    github: "https://github.com/Moadel17/Travel-Website",
     category: "css",
   },
   {
@@ -43,7 +43,7 @@ export const cards = [
     title: "Coffee Brand",
     description: "A brand coffee website that buy coffee, tea, juice and etc.",
     link: "https://coffee-brand-p8po.vercel.app/",
-    more: "",
+    github: "https://github.com/Moadel17/Coffee-Brand",
     category: "react",
   },
   {
@@ -52,7 +52,7 @@ export const cards = [
     title: "Medical Website",
     description: "Medical Company thats buy a medical products.",
     link: "https://medical-site-silk.vercel.app/",
-    more: "",
+    github: "https://github.com/Moadel17/Medical-Site",
     category: "react",
   },
   {
@@ -61,7 +61,7 @@ export const cards = [
     title: "Gym",
     description: "Gym web that show programs & prices and other details.",
     link: "https://gym-rust-seven.vercel.app/",
-    more: "",
+    github: "https://github.com/Moadel17/Gym",
     category: "react",
   },
   {
@@ -71,7 +71,7 @@ export const cards = [
     description:
       "An electronic web that sales phones & laptops and other devices",
     link: "https://e-shop-seven-sigma.vercel.app/",
-    more: "",
+    github: "https://github.com/Moadel17/E-Shop",
     category: "react",
   },
 ];

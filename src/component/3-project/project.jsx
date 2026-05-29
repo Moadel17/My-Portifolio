@@ -50,11 +50,11 @@ export default function Projects({ darkMode }) {
           <h2>{card.title}</h2>
           <p>{card.description}</p>
           <div className="links-box">
-            <Link to={card.link , "_blank"}>
+            <Link to={card.github}>
+              GitHub
               <FaLink style={{ fontSize: "18px" }} />
             </Link>
-            <Link to={card.link , "_blank"}>
-              {/* don't add to here */}
+            <Link to={card.link}>
               More <FaArrowRight />
             </Link>
           </div>
