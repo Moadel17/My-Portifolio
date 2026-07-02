@@ -3,6 +3,7 @@ import coffeeBrandWeb from "../../Photos/Coffee Brand Web.png";
 import medWeb from "../../Photos/Medical Web.png";
 import gym from "../../Photos/gym.png";
 import eShop from "../../Photos/e-shop.png";
+import aiAnalyzer from "../../Photos/ai-analyzer.png";
 
 export const buttons = [
   {
@@ -72,6 +73,16 @@ export const cards = [
       "An electronic web that sales phones & laptops and other devices",
     link: "https://e-shop-seven-sigma.vercel.app/",
     github: "https://github.com/Moadel17/E-Shop",
+    category: "react",
+  },
+  {
+    key: 6,
+    img: aiAnalyzer,
+    title: "Ai Analyzer",
+    description:
+      "A Website that allow to you to upload your resume or cv and give you a rate of it and tell you what you need to improve",
+    link: "https://ai-analyzer-virid.vercel.app/auth?next=/",
+    github: "https://github.com/Moadel17/Ai-Analyzer",
     category: "react",
   },
 ];
