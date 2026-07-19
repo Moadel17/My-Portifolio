@@ -1,9 +1,12 @@
-import travelWeb from "../../Photos/travelweb.png";
-import coffeeBrandWeb from "../../Photos/Coffee Brand Web.png";
-import medWeb from "../../Photos/Medical Web.png";
-import gym from "../../Photos/gym.png";
-import eShop from "../../Photos/e-shop.png";
-import aiAnalyzer from "../../Photos/ai-analyzer.png";
+import {
+  travelWeb,
+  coffeeBrandWeb,
+  medWeb,
+  gym,
+  eShop,
+  aiAnalyzer,
+  adminDashboard,
+} from "../../Photos";
 
 export const buttons = [
   {
@@ -70,7 +73,7 @@ export const cards = [
     img: eShop,
     title: "E-Shop",
     description:
-      "An electronic web that sales phones & laptops and other devices",
+      "An electronic web that sales phones & laptops and other devices.",
     link: "https://e-shop-seven-sigma.vercel.app/",
     github: "https://github.com/Moadel17/E-Shop",
     category: "react",
@@ -80,9 +83,19 @@ export const cards = [
     img: aiAnalyzer,
     title: "Ai Analyzer",
     description:
-      "A Website that allow to you to upload your resume or cv and give you a rate of it and tell you what you need to improve",
+      "A Website that allow to you to upload your resume or cv and give you a rate of it and tell you what you need to improve.",
     link: "https://ai-analyzer-virid.vercel.app/auth?next=/",
     github: "https://github.com/Moadel17/Ai-Analyzer",
+    category: "react",
+  },
+  {
+    key: 7,
+    img: adminDashboard,
+    title: "CRM Dashboard",
+    description:
+      "An Admin dashboard website that can add companies data, events and tasks.",
+    link: "https://crm-dashboard-three-mu.vercel.app/",
+    github: "https://github.com/Moadel17/crm-dashboard",
     category: "react",
   },
 ];
